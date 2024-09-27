@@ -13,7 +13,7 @@ class ModelData {
     var hikes: [Hike] = load("hikeData.json")
     var profile = Profile.default
     
-    var futures: [Landmark] {
+    var features: [Landmark] {
         landmarks.filter { $0.isFeatured }
     }
     var categories: [String: [Landmark]] {
